@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configurations>
+  <StandarFile filter="*.xls" spliter="">
+    <column name="C1" valuetype="string"/>
+    <column name="C2" valuetype="int"/>
+    <column name="C3" valuetype="decimal"/>
+  </StandarFile>
+  <SourceDBCfg type="sql server">
+    <connection connectionstring="Data Source=10.11.11.253;Initial Catalog=JmgjjPreliminary;User ID=sa;Password=Hli12345" port="1433"/>
+  </SourceDBCfg>
+</Configurations>

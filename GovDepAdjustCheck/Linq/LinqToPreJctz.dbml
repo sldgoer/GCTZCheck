@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="JmgjjPreliminary" Class="LinqToPreJctzDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.11.11.253;Initial Catalog=JmgjjPreliminary;User ID=sa" SettingsObjectName="GovDepAdjustCheck.Properties.Settings" SettingsPropertyName="JmgjjPreliminaryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.A037preJctz" Member="A037preJctzs">
+    <Type Name="A037preJctz">
+      <Column Name="responsNum" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="areaCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="uAccount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="uName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="aCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="agentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="agentTel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ondate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="editor" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="des" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="edittime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="auditor" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="audittime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isdel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="tsp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_account" Member="t_accounts">
+    <Type Name="t_account">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="u_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Card" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Account" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="workdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="c_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="u_money" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="i_money" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Money" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="accrual" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="sign_tag" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="input_user" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="input_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="sign_user" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="sign_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="number_id" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="u_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="money_backup" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="fgb_account" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="u_account" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="bank_card" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Render_Money" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="bank_u_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="xml_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fact_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="bili" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="over_area_tag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="area_code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="corp_type" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="corp_code" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="u_bili" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="ZhiFuMiMa" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="i_bili" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="account_backup" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="noNumberId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="is_loan_otherarea_tag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="render_city" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="openMoney" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="is_id_card" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="modify_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modify_user" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="sign_modify_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sign_modify_user" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="pwd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NewBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="GLMen" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
