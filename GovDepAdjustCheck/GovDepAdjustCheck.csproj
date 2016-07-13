@@ -34,6 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LinqToExcel">
+      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion">
+      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Interfaces">
+      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -54,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAO\PersonsOfGov.cs" />
     <Compile Include="DAO\StandarFileCfg.cs" />
     <Compile Include="DAO\StanderFileRows.cs">
       <SubType>Code</SubType>
@@ -66,7 +82,9 @@
       <DependentUpon>LinqToPreJctz.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\DataBaseInfo.cs" />
+    <Compile Include="Models\PersonInfo.cs" />
     <Compile Include="Models\StandarFileColumnInfo.cs" />
+    <Compile Include="Models\UnitInfo.cs" />
     <Compile Include="XML\XmlHelper.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +125,7 @@
       <LastGenOutput>LinqToPreJctz.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
