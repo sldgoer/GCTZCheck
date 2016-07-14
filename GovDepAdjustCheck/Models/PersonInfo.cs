@@ -31,5 +31,10 @@ namespace GovDepAdjustCheck.Models
 
         [ExcelColumn(@"住房公积金(12%)")]
         public decimal Render { get; set; } 
+
+        public override string ToString()
+        {
+            return string.Format("Name:{0};UnitName:{1};UnitCode:{2};IdCard:{3};Salary:{4};Render:{5}", Name, UnitName, UnitCode, IdCard, Salary, Render);
+        }
     }
 }

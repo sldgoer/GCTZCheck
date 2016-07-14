@@ -32,12 +32,16 @@ namespace GovDepAdjustCheck.DAO
             }
         }
 
-        public IEnumerator<PersonInfo> GetPersons()
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+        public IEnumerator<PersonInfo> GetEnumerator()
         {
             var excel = new ExcelQueryFactory(_excelFileName);
             excel.TrimSpaces = TrimSpacesType.Both;
-            var persons = from p in excel.Worksheet<PersonInfo>(0)
-                          where p.Name.Length>0
+            var persons = from p in excel.Worksheet<PersonInfo>("住房公积金个人缴款明细表")
+                          where p.Name !=""
                           select p;
 
             foreach (var p in persons)
@@ -45,10 +49,6 @@ namespace GovDepAdjustCheck.DAO
                 yield return p;
             }
         }
-        IEnumerator GetEnumerator()
-        {
-            return GetPersons();
-        }
-
+                 
     }
 }

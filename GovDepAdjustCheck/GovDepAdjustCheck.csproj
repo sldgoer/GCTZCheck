@@ -35,19 +35,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LinqToExcel">
-      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\LinqToExcel.dll</HintPath>
+      <HintPath>..\packages\LinqToExcel.1.10.1\lib\LinqToExcel.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Remotion">
-      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.dll</HintPath>
+      <HintPath>..\packages\LinqToExcel.1.10.1\lib\Remotion.dll</HintPath>
     </Reference>
     <Reference Include="Remotion.Data.Linq">
-      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.Data.Linq.dll</HintPath>
+      <HintPath>..\packages\LinqToExcel.1.10.1\lib\Remotion.Data.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Remotion.Interfaces">
-      <HintPath>d:\visual studio 2013\Projects\GCTZCheck\packages\LinqToExcel.1.10.1\lib\Remotion.Interfaces.dll</HintPath>
+      <HintPath>..\packages\LinqToExcel.1.10.1\lib\Remotion.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

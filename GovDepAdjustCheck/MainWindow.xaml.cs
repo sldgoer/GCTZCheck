@@ -57,25 +57,32 @@ namespace GovDepAdjustCheck
         }
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
-            var sfr = new StanderFileRows(_excelfilename,"[Sheet1$]");
-            //sfc=new StandarFileCfg()
-            DataTable dt = new DataTable();
-            foreach (var c in sfc)
-            {
-                dt.Columns.Add(c.ColumnName, c.ValueType);
-            }
+            //var sfr = new StanderFileRows(_excelfilename,"[Sheet1$]");
+            ////sfc=new StandarFileCfg()
+            //DataTable dt = new DataTable();
+            //foreach (var c in sfc)
+            //{
+            //    dt.Columns.Add(c.ColumnName, c.ValueType);
+            //}
 
-            foreach (DataRow dr in sfr)
-            {
-                //dr.Table = dt;
-                dt.Rows.Add(dr.ItemArray);
-            }
+            //foreach (DataRow dr in sfr)
+            //{
+            //    //dr.Table = dt;
+            //    dt.Rows.Add(dr.ItemArray);
+            //}
 
           //20160630 Notes
             //Add the check process code here;
             //sfr is a datarows iterator from excel sheet1 including the column captions; 
             //sfc is a columname iterator from configuration file that need to check;
             //It should show the check result and export to excel file;
+
+            var pg = new PersonsOfGov(_excelfilename);
+            
+            foreach (var pi in pg)
+            {
+                Console.WriteLine(pi.ToString());
+            }
         }        
 
         //private DataTable GetTableFromExcel(string filename)
@@ -96,24 +103,6 @@ namespace GovDepAdjustCheck
         {
             sfc = new StandarFileCfg(filename);
         }
-
-        
-
-        //private string AssemblySqlCommnandText(string exceltabelname,StandarFileCfg columnsinfo)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    sb.Append("select ");
-        //    foreach (var ci in columnsinfo)
-        //    {
-        //        sb.Append(ci.ColumnName+",");
-        //    }
-        //    sb.Remove(sb.Length - 1, 1);
-        //    sb.Append(" from " + exceltabelname);
-
-        //    return sb.ToString();
-
-        //}
-
 
     }
 }
